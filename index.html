@@ -4,106 +4,174 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="./style.css">
    <title>Best travel agency</title>
 </head>
 <body>
    <header class="header">
       <nav class="nav">
-         <img src="" alt="agency logo" class="nav__logo">
+         <div class="nav__brand">
+            <img src="./images/logo.png" alt="agency logo" class="nav__brand nav__brand--logo" height="40" width="40">
+            <span class="nav__brand nav__brand--name">TRAVELLER</span>
+         </div>
          <ul class="nav__links">
-            <li class="nav__item"><a href="#destinations" class="nav__link">Top destinations</a></li>
+            <li class="nav__item"><a href="#destinations" class="nav__link">Destinations</a></li>
             <li class="nav__item"><a href="#sevices" class="nav__link">Services</a></li>
             <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
-            <li class="nav__item"><a href="#" class="nav__link nav__link--btn">Sign up</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link--btn">Book vacation</a></li>
          </ul>
       </nav>
       <div class="header__title">
-         <h1></h1>
-         <h4></h4>
+         <h1>Go explore the world</h1>
+         <h4>Stand up from your couch and take a bite of adventure</h4>
+         <button class="btn__scroll">Learn more <span>&darr;</span></button>
       </div>
-      <div class="header__description"></div>
-      <button class="btn"></button>
-      <img src="" alt="" class="header__img lazy">
+      <img src="images/headerImg.jpg" alt="night panorama" class="header__img lazy" height="300">
    </header>
    <section class="section" id="destinations">
       <div class="section__heading">
-         <div class="section__description"></div>
-         <h1 class="section__title"></h1>
+         <div class="section__description">Top destinations</div>
+         <h2 class="section__title">Our recommendations for your next vacation.</h2>
       </div>
       <div class="destinations">
-         <img src="" alt="" class="destinations__img lazy">
+         <img src="images/paris.jpg" alt="Paris" class="destinations__img lazy" height="250">
          <div class="destinations__destination">
-            <div class="destinations__icon"></div>
-            <h5 class="destinations__header"></h5>
-            <p></p>
+            <div class="destinations__icon">
+               <svg height="60" width="60">
+                  <use xlink:href="images/svgs/croissant.svg#Layer_1"></use>
+               </svg>
+            </div>
+            <h3 class="destinations__header">Paris</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
          </div>
          
          <div class="destinations__destination">
-            <div class="destinations__icon"></div>
-            <h5 class="destinations__header"></h5>
-            <p></p>
+            <div class="destinations__icon">
+               <svg height="60" width="60">
+                  <use xlink:href="images/svgs/morroco.svg#Capa_1"></use>
+               </svg>
+            </div>
+            <h3 class="destinations__header">Morroco</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
          </div>
-         <img src="" alt="" class="destinations__img lazy">
+         <img src="images/morocco.jpg" alt="Morroco" class="destinations__img lazy" height="250">
          
-         <img src="" alt="" class="destinations__img lazy">
+         <img src="images/peru.jpg" alt="Peru" class="destinations__img lazy" height="250">
          <div class="destinations__destination">
-            <div class="destinations__icon"></div>
-            <h5 class="destinations__header"></h5>
-            <p></p>
+            <div class="destinations__icon">
+               <svg height="60" width="60">
+                  <use xlink:href="images/svgs/chichen-itza.svg#chichen-itza"></use>
+               </svg>
+            </div>
+            <h3 class="destinations__header">Peru</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
          </div>
       </div>
    </section>
    <section class="section" id="services">
       <div class="section__heading">
-         <div class="section__description"></div>
-         <h1 class="section__title"></h1>
+         <div class="section__description">Services</div>
+         <h2 class="section__title">Everything you can imagine.</h2>
       </div>
       <div class="services__tab-container">
          <button class="btn services__tab_btn services__tab_btn--1 services__tab_btn--active">
-            <span>01</span>Group tours
+            <span>01</span> Group tours
          </button>
          <button class="btn services__tab_btn services__tab_btn--2">
-            <span>02</span>Wellness
+            <span>02</span> Wellness
          </button>
          <button class="btn services__tab_btn services__tab_btn--3">
-            <span>03</span>Exotic vacations
+            <span>03</span> Exotic vacations
          </button>
          <div class="services__tab_content services__tab_content--1 services__tab_content--active">
-            <div class="services__icon services__icon--1"></div>
-            <h5 class="services__header"></h5>
-            <p></p>
+            <div class="services__icon services__icon--1">
+               <svg height="60" width="60">
+                  <use xlink:href="images/svgs/group.svg#Group_1"></use>
+               </svg>
+            </div>
+            <h5 class="services__header">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+            <p class="services__description">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
          </div>
          <div class="services__tab_content services__tab_content--2">
-            <div class="services__icon services__icon--2"></div>
-            <h5 class="services__header"></h5>
-            <p></p>
+            <div class="services__icon services__icon--2">
+               <svg height="60" width="60">
+                  <use xlink:href="images/svgs/lotus.svg#Lotus_1"></use>
+               </svg>
+            </div>
+            <h5 class="services__header">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</h5>
+            <p class="services__description">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
          </div>
          <div class="services__tab_content services__tab_content--3">
-            <div class="services__icon services__icon--3"></div>
-            <h5 class="services__header"></h5>
-            <p></p>
+            <div class="services__icon services__icon--3">
+               <svg height="60" width="60">
+                  <use xlink:href="images/svgs/sunset.svg#Exotic"></use>
+               </svg>
+            </div>
+            <h5 class="services__header">Quis autem vel eum iure reprehenderit qui.</h5>
+            <p class="services__description">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
          </div>
       </div>
    </section>
    <section class="section" id="testimonials">
       <div class="section__heading">
-         <div class="section__description"></div>
-         <h1 class="section__title"></h1>
+         <div class="section__description">Not sure yet?</div>
+         <h2 class="section__title">Read what other people think about us.</h2>
       </div>
       <div class="slider">
          <div class="slide slide--1">
             <div class="testimonial">
-               <h5 class="testimonial__title"></h5>
-               <blockquote class="testimonial__text"></blockquote>
+               <h5 class="testimonial__title">My best vacation ever!</h5>
+               <blockquote class="testimonial__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</blockquote>
                <address class="testimonial__author">
                   <img src="" alt="" class="testimonial_photo">
-                  <h6 class="testimonial__name"></h6>
-                  <p class="testimonial__location"></p>
+                  <h6 class="testimonial__name">Frank May</h6>
+                  <p class="testimonial__location">Philadelpia</p>
                </address>
             </div>
          </div>
-         <button class="btn slider__button slider__button--left">&larr</button>
-         <button class="btn slider__button slider__button--rigth">&rarr</button>
+         <div class="slide slide--2">
+            <div class="testimonial">
+               <h5 class="testimonial__title">It was exiting!</h5>
+               <blockquote class="testimonial__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</blockquote>
+               <address class="testimonial__author">
+                  <img src="" alt="" class="testimonial_photo">
+                  <h6 class="testimonial__name">Vanessa Simpson</h6>
+                  <p class="testimonial__location">London, UK</p>
+               </address>
+            </div>
+         </div>
+         <div class="slide slide--3">
+            <div class="testimonial">
+               <h5 class="testimonial__title">I've met awsome peopple</h5>
+               <blockquote class="testimonial__text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</blockquote>
+               <address class="testimonial__author">
+                  <img src="" alt="" class="testimonial_photo">
+                  <h6 class="testimonial__name">Natasha Kinski</h6>
+                  <p class="testimonial__location">Moscow, Russia</p>
+               </address>
+            </div>
+         </div>
+         <div class="slide slide--4">
+            <div class="testimonial">
+               <h5 class="testimonial__title">I am so relaxed and full of energy!</h5>
+               <blockquote class="testimonial__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </blockquote>
+               <address class="testimonial__author">
+                  <img src="" alt="" class="testimonial_photo">
+                  <h6 class="testimonial__name">Filip Poatie</h6>
+                  <p class="testimonial__location">Nice, France</p>
+               </address>
+            </div>
+         </div>
+         <button class="btn slider__button slider__button--left">&larr;</button>
+         <button class="btn slider__button slider__button--rigth">&rarr;</button>
          <div class="dots"></div>
       </div>
    </section>
