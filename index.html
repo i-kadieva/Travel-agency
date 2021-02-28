@@ -18,7 +18,7 @@
          </div>
          <ul class="nav__links">
             <li class="nav__item"><a href="#destinations" class="nav__link">Destinations</a></li>
-            <li class="nav__item"><a href="#sevices" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
             <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
             <li class="nav__item"><a href="#" class="nav__link nav__link--btn">Book vacation</a></li>
          </ul>
@@ -46,7 +46,7 @@
             <h3 class="destinations__header">Paris</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
          </div>
-         
+
          <div class="destinations__destination">
             <div class="destinations__icon">
                <svg height="60" width="60">
@@ -57,7 +57,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
          </div>
          <img src="images/morocco.jpg" alt="Morroco" class="destinations__img lazy" height="250">
-         
+
          <img src="images/peru.jpg" alt="Peru" class="destinations__img lazy" height="250">
          <div class="destinations__destination">
             <div class="destinations__icon">
@@ -76,13 +76,13 @@
          <h2 class="section__title">Everything you can imagine.</h2>
       </div>
       <div class="services__tab-container">
-         <button class="btn services__tab_btn services__tab_btn--1 services__tab_btn--active">
+         <button data-tab="1" class="btn services__tab_btn services__tab_btn--1 services__tab_btn--active">
             <span>01</span> Group tours
          </button>
-         <button class="btn services__tab_btn services__tab_btn--2">
+         <button data-tab="2" class="btn services__tab_btn services__tab_btn--2">
             <span>02</span> Wellness
          </button>
-         <button class="btn services__tab_btn services__tab_btn--3">
+         <button data-tab="3" class="btn services__tab_btn services__tab_btn--3">
             <span>03</span> Exotic vacations
          </button>
          <div class="services__tab_content services__tab_content--1 services__tab_content--active">
@@ -131,7 +131,7 @@
                <h5 class="testimonial__title">My best vacation ever!</h5>
                <blockquote class="testimonial__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</blockquote>
                <address class="testimonial__author">
-                  <img src="" alt="" class="testimonial_photo">
+                  <img src="images/Frank.jpg" alt="Frank May" class="testimonial_photo">
                   <h6 class="testimonial__name">Frank May</h6>
                   <p class="testimonial__location">Philadelpia</p>
                </address>
@@ -142,7 +142,7 @@
                <h5 class="testimonial__title">It was exiting!</h5>
                <blockquote class="testimonial__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</blockquote>
                <address class="testimonial__author">
-                  <img src="" alt="" class="testimonial_photo">
+                  <img src="images/Vanessa.jpg" alt="Vanessa Simpson" class="testimonial_photo">
                   <h6 class="testimonial__name">Vanessa Simpson</h6>
                   <p class="testimonial__location">London, UK</p>
                </address>
@@ -153,8 +153,8 @@
                <h5 class="testimonial__title">I've met awsome peopple</h5>
                <blockquote class="testimonial__text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</blockquote>
                <address class="testimonial__author">
-                  <img src="" alt="" class="testimonial_photo">
-                  <h6 class="testimonial__name">Natasha Kinski</h6>
+                  <img src="images/Natasha.jpg" alt="Natasha Believa" class="testimonial_photo">
+                  <h6 class="testimonial__name">Natasha Believa</h6>
                   <p class="testimonial__location">Moscow, Russia</p>
                </address>
             </div>
@@ -164,7 +164,7 @@
                <h5 class="testimonial__title">I am so relaxed and full of energy!</h5>
                <blockquote class="testimonial__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </blockquote>
                <address class="testimonial__author">
-                  <img src="" alt="" class="testimonial_photo">
+                  <img src="images/Filip.jpg" alt="Filip Poatie" class="testimonial_photo">
                   <h6 class="testimonial__name">Filip Poatie</h6>
                   <p class="testimonial__location">Nice, France</p>
                </address>
@@ -192,5 +192,6 @@
          </a>.
        </p>
    </footer>
+   <script src="./scripts/app.js" type="module"></script>
 </body>
 </html>

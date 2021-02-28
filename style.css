@@ -24,18 +24,17 @@ body {
    font-weight: 400;
    line-height: 3.2rem;
    color: #444444;
-   background-color: #f7f7f7;
+   background-color: #f9f9f9;
 }
 
 .header {
    height: 100vh;
    display: grid;
-   padding: 1rem 8rem;
    grid-template-columns: repeat(2, 1fr);
    gap: 16rem 4rem;
    align-content: start;
    justify-content: center;
-   
+
    align-items: center;
 }
 
@@ -44,6 +43,7 @@ body {
    align-items: center;
    justify-content: space-between;
    grid-column: 1 / -1;
+   padding: 1.8rem 8rem;
 }
 
 .nav__brand {
@@ -107,6 +107,12 @@ h1 {
    outline: none;
 }
 
+.sticky {
+   position: fixed;
+   width: 100%;
+   background-color: rgba(255, 255, 255, 0.9);
+}
+
 .services__tab_btn--1 {
    background-color: var(--color-tab-button-1);
    border-color: var(--color-tab-button-1);
@@ -124,13 +130,12 @@ h1 {
 }
 
 .section {
-   border-top: 1px solid rgb(231, 231, 231);
+   border-top: 1px solid rgb(178, 178, 178);
    padding: 16rem;
 }
 
 .section__heading {
-   margin-bottom: 8rem;
-   max-width: 50rem;
+   max-width: 80rem;
    margin: 0 auto;
 }
 
@@ -141,10 +146,10 @@ h1 {
 .destinations {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 4rem;
+   gap: 8rem;
    align-content: center;
    justify-content: center;
-   margin: 5rem;
+   margin: 8rem;
 }
 
 .destinations__destination {
@@ -169,7 +174,8 @@ h1 {
 }
 
 .destinations__img {
-   width: 100%;
+   width: 70%;
+   justify-self: center;
 }
 
 p {
@@ -177,13 +183,20 @@ p {
 }
 
 .services__tab-container {
-   margin: 5rem auto;
+   margin: 8rem auto;
    max-width: 70%;
 }
 
 .services__tab_btn {
    position: relative;
-   transform: translate(10rem, 50%);
+   left: 7rem;
+   top: 1.9rem;
+   transition: transform .6s;
+}
+
+.services__tab_btn--active {
+   transform: translateY(-20%) scale(1.02);
+   box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
 }
 
 .services__tab_content {
@@ -197,7 +210,7 @@ p {
    gap: .5rem 0;
    align-content: center;
    justify-content: center;
-   padding: 5rem 3rem;
+   padding: 10rem 8rem;
    background-color: #ffffff;
 }
 
@@ -226,4 +239,15 @@ p {
 
 .slider {
    margin: 5rem;
+   padding: 3rem 16rem;
+}
+
+.slide {
+   width: 450px;
+}
+
+.testimonial_photo {
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
 }
